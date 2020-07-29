@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Chat-App</title>
-        <link rel="stylesheet" href="/css/styles.min.css">
+        <title>G33kChat</title>
+        <link rel="stylesheet" href="./index.css" />
     </head>
     <body>
-         <div class="centered-form">
-             <div class="centered-form__box">
-                 <h1>Join</h1>
-                 <form action="./chatroom.html">
-                     <label>Display Name</label>
-                     <input type="text" name="username" placeholder="Display Name" required>
-                     <label>Room</label>
-                     <input type="text" name="room" placeholder="Room" required>
-                     <button>Join</button>
-                 </form>
+         <div class="conatiner">
+             <div class="form">
+                 <div class="heading">
+                    <h1>Create Room</h1>
+                 </div>
+                 <div class="form__form">
+                    <form action="./chatroom.html">
+                        <div class="form__group">
+                           <input type="text" name="username" class="form__input" placeholder="Username" required>
+                           <label class="form__label">Username</label>
+                        </div>
+                        <div class="form__group">
+                           <input type="text" name="room" placeholder="Room Name"  class="form__input" required>
+                           <label class="form__label">Room Name</label>
+                        </div>
+                        <div class="button">
+                            <label>
+                                <button style="display: none;" type="submit"></button>
+                                <a type="submit" class="btn">Create</a>
+                            </label>
+                        </div>
+                    </form>
+                 </div>
              </div>
          </div>
     </body>
